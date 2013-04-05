@@ -46,10 +46,12 @@ PRODUCT_COPY_FILES += \
     device/htc/msm7x30-common/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     device/htc/msm7x30-common/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw
 
+ifneq ($(BOARD_PROVIDES_MEDIA_PROFILES),true)
 PRODUCT_COPY_FILES += \
     device/htc/msm7x30-common/media_profiles.xml:system/etc/media_profiles.xml \
     device/htc/msm7x30-common/media_codecs.xml:system/etc/media_codecs.xml \
     device/htc/msm7x30-common/audio_policy.conf:system/etc/audio_policy.conf
+endif
 
 # Audio
 PRODUCT_PACKAGES += \
