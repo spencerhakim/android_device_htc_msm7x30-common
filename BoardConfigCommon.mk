@@ -13,7 +13,6 @@
 # limitations under the License.
 
 # Common stuff
-TARGET_SPECIFIC_HEADER_PATH := device/htc/msm7x30-common/include
 DEVICE_PACKAGE_OVERLAYS += device/htc/msm7x30-common/overlay
 
 # Platform
